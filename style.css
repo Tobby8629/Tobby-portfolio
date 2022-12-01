@@ -4,14 +4,49 @@
     box-sizing: border-box; 
 }
 body {
-    background-color:  #E5E5E5; 
+    background-color:  #E5E5E5;
+    font-family:'Poppins', sans-serif; 
 }
 header {
-    background-color: white;
+    background-color:white;
 }
 nav { 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:24px;
+    padding:24px; 
+}
+.header{
+    background-image:url(images/header-shapes\ mobile@2x.svg);
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    padding: 5rem 2rem;
+    border-bottom-left-radius: 10px;
+}
+.header h2{
+    font-size: 40px;
+    line-height:52px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.socials{
+    margin: 5px 0px;
+}
+.socials h3{
+    color:  #7F8CFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.links{
+    display: flex;
+}
+.links a {
+    margin-right:20px;
+}
+.liks a img{
+    width: 100%;
 }
