@@ -1,8 +1,17 @@
 * {
     padding: 0px; 
     margin: 0px;
-    box-sizing: border-box;  }
+    box-sizing: border-box; 
+}
 body {
-    
-    background-color:  #E5E5E5;
+    background-color:  #E5E5E5; 
+}
+header {
+    background-color: white;
+}
+nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:24px;
 }
