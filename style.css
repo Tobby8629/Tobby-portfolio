@@ -24,14 +24,16 @@ nav {
 .header {
   background-image: url(images/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 5rem 2rem;
   border-bottom-left-radius: 10px;
 }
 
-.header h2 {
+.header h1 {
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
@@ -61,34 +63,44 @@ nav {
   margin-right: 20px;
 }
 
-.links a img {
-  width: 100%;
-}
-
 /***************** The project sections styles ***************/
+
 .projects {
-  background-color: white;
-  border-radius: 10px;
   width: 90%;
   margin: 5px auto;
-  padding: 1rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, 340px);
+  justify-content: center;
   margin-bottom: 4rem;
 }
 
-.projects h2 {
+.project {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project h2 {
   text-transform: capitalize;
-  margin-bottom: 0.7rem;
+  margin: 0.7rem 0;
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
 }
 
-.projects ul {
+.project ul {
   display: flex;
-  margin-bottom: 0.7rem;
+  margin: 0.7rem 0;
 }
 
-.projects li {
+.project li {
   margin-right: 1rem;
   font-size: 13px;
   color: #7a869a;
@@ -97,7 +109,7 @@ nav {
   font-weight: 600;
 }
 
-.projects p {
+.project p {
   margin-bottom: 0.7rem;
 }
 
@@ -120,7 +132,7 @@ nav {
   border-radius: 5px;
 }
 
-button {
+.btn {
   margin: 0.7rem 0;
   color: #396df2;
   outline: none;
@@ -130,6 +142,28 @@ button {
   border: 1px solid #396df2;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
+}
+
+.btn:enabled {
+  color: #6070ff;
+  background-color: white;
+  border: 1px solid #6070ff;
+}
+
+.btn:disabled {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  color: #5e6c84;
+}
+
+.btn:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #6070ff;
+  color: white;
 }
 
 /***************** The project sections styles ***************/
@@ -195,7 +229,7 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
   color: white;
   display: flex;
   align-items: center;
