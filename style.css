@@ -22,6 +22,7 @@ nav {
 
 .header {
   background-image: url(images/header-shapes\ mobile@2x.svg);
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -45,6 +46,10 @@ nav {
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.socials li {
+  list-style: none;
 }
 
 .links {
