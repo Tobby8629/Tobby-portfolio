@@ -140,6 +140,7 @@ button {
   background-color: white;
   border-top-right-radius: 5rem;
   padding: 2rem;
+  margin-bottom: 4rem;
 }
 
 .about h1 {
@@ -173,13 +174,13 @@ button {
   justify-content: space-between;
 }
 
-.dropdown {
+.ability .dropdown li {
   display: flex;
   align-items: center;
   margin: 10px 0;
   background-color: #f7f7f9;
-  padding: 7px;
   border-radius: 7px;
+  padding: 5px;
 }
 
 .dropdown p {
@@ -187,3 +188,64 @@ button {
 }
 
 /************** the about style *******************/
+
+.contact {
+  background-color: #6070ff;
+  background-image: url(images/header-shapes\ mobile.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top-left-radius: 7rem;
+  padding: 1rem;
+}
+
+.contact h2 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.contact p {
+  font-size: 20px;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.contact form {
+  margin: 1.2rem 0;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact textarea {
+  height: 150px;
+}
+
+.contact button {
+  padding: 13px;
+  outline: none;
+  background-color: white;
+  color: #6070ff;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 7px;
+}
