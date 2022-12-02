@@ -11,6 +11,7 @@ body {
 
 header {
   background-color: white;
+  margin-bottom: 4rem;
 }
 
 nav {
@@ -23,14 +24,16 @@ nav {
 .header {
   background-image: url(images/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 5rem 2rem;
   border-bottom-left-radius: 10px;
 }
 
-.header h2 {
+.header h1 {
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
@@ -45,7 +48,7 @@ nav {
   color: #7f8cff;
   font-size: 16px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin: 1rem 0;
 }
 
 .socials li {
@@ -56,10 +59,227 @@ nav {
   display: flex;
 }
 
-.links a {
+.links li {
   margin-right: 20px;
 }
 
-.liks a img {
+/***************** The project sections styles ***************/
+
+.projects {
+  width: 90%;
+  margin: 5px auto;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, 340px);
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.project {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.project img {
   width: 100%;
+}
+
+.project h2 {
+  text-transform: capitalize;
+  margin: 0.7rem 0;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.project ul {
+  display: flex;
+  margin: 0.7rem 0;
+}
+
+.project li {
+  margin-right: 1rem;
+  font-size: 13px;
+  color: #7a869a;
+  list-style-position: inside;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.project p {
+  margin-bottom: 0.7rem;
+}
+
+#dark {
+  list-style: none;
+  color: black;
+}
+
+.stack {
+  display: flex;
+  margin-bottom: 0.7rem;
+}
+
+.stack li {
+  color: #6070ff;
+  font-size: 12px;
+  background-color: #ebebff;
+  list-style: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.btn {
+  margin: 0.7rem 0;
+  color: #396df2;
+  outline: none;
+  background: transparent;
+  font-size: 17px;
+  padding: 5px;
+  border: 1px solid #396df2;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn:enabled {
+  color: #6070ff;
+  background-color: white;
+  border: 1px solid #6070ff;
+}
+
+.btn:disabled {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  color: #5e6c84;
+}
+
+.btn:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+/***************** The project sections styles ***************/
+
+/************** the about style *******************/
+
+.about {
+  background-color: white;
+  border-top-right-radius: 5rem;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.about h1 {
+  text-transform: capitalize;
+  margin-bottom: 0.7rem;
+  font-size: 45px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.about h3 {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.about p {
+  font-size: 16px;
+}
+
+.ability li {
+  list-style: none;
+  border-bottom: 1px solid #dfe1e6;
+  padding: 1.2rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ability .dropdown li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  background-color: #f7f7f9;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.dropdown p {
+  margin: 0 1rem;
+}
+
+/************** the about style *******************/
+
+.contact {
+  background-color: #6070ff;
+  background-image: url(images/header-shapes\ mobile.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top-left-radius: 7rem;
+  padding: 1rem;
+}
+
+.contact h2 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.contact p {
+  font-size: 20px;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.contact form {
+  margin: 1.2rem 0;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact textarea {
+  height: 150px;
+}
+
+.contact button {
+  padding: 13px;
+  outline: none;
+  background-color: white;
+  color: #6070ff;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 7px;
 }
