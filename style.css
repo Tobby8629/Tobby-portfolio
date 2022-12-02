@@ -11,6 +11,7 @@ body {
 
 header {
   background-color: white;
+  margin-bottom: 4rem;
 }
 
 nav {
@@ -22,7 +23,7 @@ nav {
 
 .header {
   background-image: url(images/header-shapes\ mobile@2x.svg);
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -56,10 +57,85 @@ nav {
   display: flex;
 }
 
-.links a {
-  margin-right: 20px;
+.links li {
+  margin-right:20px;
 }
 
-.liks a img {
+.links a img {
   width: 100%;
 }
+
+/*****************The project sections styles***************/
+.projects{
+  background-color:white;
+  border-radius: 10px;
+  width: 90%;
+  margin: 5px auto;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.projects h2 {
+  text-transform: capitalize;
+  margin-bottom: 0.7rem;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+
+}
+
+.projects ul{
+  display: flex;
+  margin-bottom: 0.7rem;
+    
+}
+.projects li{
+  margin-right: 1rem;
+  font-size: 13px;
+  color: #7A869A;
+  list-style-position: inside;
+  text-transform: capitalize;
+  font-weight: 600;
+    
+}
+
+.projects p{
+  margin-bottom: 0.7rem;
+}
+#dark{
+  list-style: none;
+  color:  black;
+}
+
+.stack{
+  display: flex;
+  margin-bottom:0.7rem;
+}
+
+.stack li {
+  color:#6070FF;
+  font-size: 12px;
+  background-color: #EBEBFF;
+  list-style: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.projects button{
+  margin-bottom: 0.7rem;
+  color:  #396DF2;
+  outline: none;
+  background: transparent;
+  font-size: 17px;
+  padding:5px;
+  border:1px solid #396DF2;
+  border-radius: 5px;
+}
+/*****************The project sections styles***************/
+
+/**************the about style *******************/
+
+
+
+
+/**************the about style *******************/
