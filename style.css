@@ -23,7 +23,7 @@ nav {
 
 .header {
   background-image: url(images/header-shapes\ mobile@2x.svg);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@ nav {
   color: #7f8cff;
   font-size: 16px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin: 1rem 0;
 }
 
 .socials li {
@@ -58,16 +58,16 @@ nav {
 }
 
 .links li {
-  margin-right:20px;
+  margin-right: 20px;
 }
 
 .links a img {
   width: 100%;
 }
 
-/*****************The project sections styles***************/
-.projects{
-  background-color:white;
+/***************** The project sections styles ***************/
+.projects {
+  background-color: white;
   border-radius: 10px;
   width: 90%;
   margin: 5px auto;
@@ -81,61 +81,109 @@ nav {
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
-
 }
 
-.projects ul{
+.projects ul {
   display: flex;
   margin-bottom: 0.7rem;
-    
 }
-.projects li{
+
+.projects li {
   margin-right: 1rem;
   font-size: 13px;
-  color: #7A869A;
+  color: #7a869a;
   list-style-position: inside;
   text-transform: capitalize;
   font-weight: 600;
-    
 }
 
-.projects p{
+.projects p {
   margin-bottom: 0.7rem;
 }
-#dark{
+
+#dark {
   list-style: none;
-  color:  black;
+  color: black;
 }
 
-.stack{
+.stack {
   display: flex;
-  margin-bottom:0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .stack li {
-  color:#6070FF;
+  color: #6070ff;
   font-size: 12px;
-  background-color: #EBEBFF;
+  background-color: #ebebff;
   list-style: none;
   padding: 5px 8px;
   border-radius: 5px;
 }
 
-.projects button{
-  margin-bottom: 0.7rem;
-  color:  #396DF2;
+button {
+  margin: 0.7rem 0;
+  color: #396df2;
   outline: none;
   background: transparent;
   font-size: 17px;
-  padding:5px;
-  border:1px solid #396DF2;
+  padding: 5px;
+  border: 1px solid #396df2;
   border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
 }
-/*****************The project sections styles***************/
 
-/**************the about style *******************/
+/***************** The project sections styles ***************/
 
+/************** the about style *******************/
 
+.about {
+  background-color: white;
+  border-top-right-radius: 5rem;
+  padding: 2rem;
+}
 
+.about h1 {
+  text-transform: capitalize;
+  margin-bottom: 0.7rem;
+  font-size: 45px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #172b4d;
+}
 
-/**************the about style *******************/
+.about h3 {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.about p {
+  font-size: 16px;
+}
+
+.ability li {
+  list-style: none;
+  border-bottom: 1px solid #dfe1e6;
+  padding: 1.2rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  background-color: #f7f7f9;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.dropdown p {
+  margin: 0 1rem;
+}
+
+/************** the about style *******************/
