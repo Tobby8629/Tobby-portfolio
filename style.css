@@ -118,8 +118,8 @@ nav {
   color: black;
 }
 
-.stack {
-  display: flex;
+.projects .stack {
+  display: block;
   margin-bottom: 0.7rem;
 }
 
@@ -130,6 +130,7 @@ nav {
   list-style: none;
   padding: 5px 8px;
   border-radius: 5px;
+  float:left;
 }
 
 .btn {
