@@ -231,10 +231,6 @@ nav {
   background-repeat: no-repeat;
   height: 100%;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   border-top-left-radius: 7rem;
   padding: 1rem;
 }
@@ -251,16 +247,19 @@ nav {
   font-size: 20px;
   margin-bottom: 1.2rem;
   text-align: center;
+  padding: 1rem;
 }
 
 .contact form {
   margin: 1.2rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact input,
 .contact textarea {
+  padding: 1rem;
   width: 100%;
-  padding: 15px;
   border: none;
   outline: none;
   border-radius: 7px;
@@ -271,6 +270,7 @@ nav {
 
 .contact textarea {
   height: 150px;
+  resize: none;
 }
 
 .contact button {
@@ -278,8 +278,11 @@ nav {
   outline: none;
   background-color: white;
   color: #6070ff;
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 500;
   font-family: 'Poppins', sans-serif;
   border: none;
   border-radius: 7px;
+  text-transform: capitalize;
+  width: fit-content;
 }
