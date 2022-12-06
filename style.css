@@ -278,9 +278,11 @@ nav {
   outline: none;
   background-color: white;
   color: #6070ff;
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 500;
   font-family: 'Poppins', sans-serif;
   border: none;
   border-radius: 7px;
-  width: 140px;
+  text-transform: capitalize;
+  width: fit-content;
 }
