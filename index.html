@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -19,10 +16,21 @@
       <div class="menu-bar">
         <img src="images/Enabledhamburger.png" alt="">
       </div>
+      <ul>
+        <li>
+          <a href="#projects">portfolio</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#contact">contact</a>
+        </li>
+      </ul>
     </nav>
   
    <section class="header">
-     <h1>I’m Mariane Glad to see you!</h1>
+     <h1>I’m Tobby<br>Glad to see you!</h1>
      <main>
        <p>
             I’m a software developer! I can help you build a product ,
@@ -64,187 +72,270 @@
       </main>
     </section>
   </header>
-  <section class="projects">
+
+  <section id="projects">
     <main class="project">
-      <img src="images/Snapshoot Portfolio.png" alt="">
-      <h2>tonic</h2>
-      <ul>
-        <li id="dark">canopy</li>
-        <li>backend</li>
-        <li>2015</li>
-      </ul>
-      <p>
-        A daily selection of privately personalized reads; no accounts or sign-ups required.
-      </p>
-      <ul class="stack">
-        <li>html</li>
-        <li>css</li>
-        <li>javascript</li>
-      </ul>
-      <button class="btn">see project</button>
+      <div class="image">
+        <img src="images/Snapshoot Portfolio.png" alt="">
+      </div>
+      
+      <div class="content">
+        <div class="top">
+          <h2>tonic</h2>
+          <ul>
+            <li class="dark">canopy</li>
+            <li>back end Dev</li>
+            <li>2015</li>
+          </ul>
+        </div>
+
+        <div class="mid">
+          <p>
+            A daily selection of privately personalized reads; no accounts or sign-ups required.
+          </p>
+
+          <ul class="stack">
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+        </div>
+
+        <button class="btn">see project</button>
+
+      </div>
+      
+    </main>
+  
+    <main class="project inverse">
+
+      <div class="image">
+        <img src="images/Snapshoot Portfolio (1).png" alt="">
+      </div>
+  
+      <div class="content">
+        <div class="top">
+          <h2>multi-post stories</h2>
+          <ul>
+            <li class="dark mobile">canopy</li>
+            <li class="dark desktop">Facebook</li>
+            <li class="desktop">Full Stack Dev</li>
+            <li class="mobile">Back end dev</li>
+            <li>2015</li>
+          </ul>
+        </div>
+        
+        <div class="mid">
+          <p class="desktop">
+            Experimental content creation feature that 
+            allows users to add to an existing story over 
+            the course of a day without spamming their
+            friends.
+          </p>
+          <p class="mobile">
+            A daily selection of privately personalized reads; no accounts or sign-ups required.
+          </p>
+
+          <ul class="stack">
+            <li>html</li>
+            <li class="desktop">ruby on rails</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+        </div>
+
+        <button class="btn">see project</button>
+      </div>
     </main>
   
     <main class="project">
-      <img src="images/Snapshoot Portfolio (1).png" alt="">
-  
-      <h2>multi-post stories</h2>
-  
-      <ul>
-        <li id="dark">canopy</li>
-        <li>backend</li>
-        <li>2015</li>
-      </ul>
-  
-      <p>
-        A daily selection of privately personalized reads; no accounts or sign-ups required.
-      </p>
-  
-      <ul class="stack">
-        <li>html</li>
-        <li>css</li>
-        <li>javascript</li>
-      </ul>
-  
-      <button class="btn">see project</button>
+      <div class="image">
+        <img src="images/Snapshoot Portfolio (2).png" alt="">
+      </div>
+      
+      <div class="content">
+        <div class="top">
+          <h2 class="desktop">Facebook 360</h2>
+          <h2 class="mobile">tonic</h2>
+          <ul>
+            <li class="dark desktop">Facebook</li>
+            <li class="dark mobile">canopy</li>
+            <li class="desktop">full Stack Dev</li>
+            <li class="mobile">Back End Dev</li>
+            <li>2015</li>
+          </ul>
+        </div>
+
+        <div class="mid">
+          <p class="desktop">
+            Exploring the future of media in Facebook's 
+            first Virtual Reality app; a place to discover 
+            and enjoy 360 photos and videos on Gear VR.
+          </p>
+          <p class="mobile">
+            A daily selection of privately personalized reads; no accounts or sign-ups required.
+          </p>
+
+          <ul class="stack">
+            <li>html</li>
+            <li class="desktop">ruby on rails</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+        </div>
+
+        <button class="btn">see project</button>
+
+      </div>
+      
     </main>
   
-    <main class="project">
-      <img src="images/Snapshoot Portfolio (2).png" alt="">
+    <main class="project inverse">
+
+      <div class="image">
+        <img src="images/Snapshoot Portfolio (3).png" alt="">
+      </div>
   
-      <h2>tonic</h2>
-  
-      <ul>
-        <li id="dark">canopy</li>
-        <li>backend</li>
-        <li>2015</li>
-      </ul>
-  
-      <p>
-        A daily selection of privately personalized reads; no accounts or sign-ups required.
-      </p>
-  
-      <ul class="stack">
-        <li>html</li>
-        <li>css</li>
-        <li>javascript</li>
-      </ul>
-  
-      <button class="btn">see project</button>
-    </main>
-  
-    <main class="project">
-      <img src="images/Snapshoot Portfolio (3).png" alt="">
-  
-      <h2>multi-mainories</h2>
-  
-      <ul>
-        <li id="dark">canopy</li>
-        <li>backend</li>
-        <li>2015</li>
-      </ul>
-  
-      <p>
-        A daily selection of privately personalized reads; no accounts or sign-ups required.
-      </p>
-  
-      <ul class="stack">
-        <li>html</li>
-        <li>css</li>
-        <li>javascript</li>
-      </ul>
-  
-      <button class="btn">see project</button>
+      <div class="content">
+        <div class="top">
+          <h2 class="desktop">Uber Navigation</h2>
+          <h2 class="mobile">Multi-Post Stories</h2>
+          <ul>
+            <li class="dark desktop">Uber</li>
+            <li class="dark mobile">canopy</li>
+            <li class="desktop">full Stack Dev</li>
+            <li class="mobile">Back End Dev</li>
+            <li class="desktop">2018</li>
+            <li class="mobile">2015</li>
+          </ul>
+        </div>
+        
+        <div class="mid">
+          <p class="desktop">
+            A smart assistant to make driving more safe, efficient, and fun by 
+            unlocking your most expensive computer: your car.
+          </p>
+          <p class="mobile">
+            A daily selection of privately personalized reads; no accounts or sign-ups required.
+          </p>
+
+          <ul class="stack">
+            <li>html</li>
+            <li class="desktop">ruby on rails</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+        </div>
+
+        <button class="btn">see project</button>
+      </div>
     </main>
   </section>
   
 
-  <section class="about">
-    <h1>about myself</h1>
-    <p>
-      Hello I’m a software developer! I can help you build a product , 
-      feature or website Look through some of my work and experience! 
-      If you like what you see and have a project you need coded, don’t hestiate to contact me.
-    </p>
-    <div class="socials">
-      <h3>let's connect</h3>
-      <ul class="links">
+  <section class="general">
+    <main id="about">
+      
+      <div class="main">
+  
+        <h1>about <br> myself</h1>
+  
+        <p>
+          Hello I’m a software developer! I can help you build a product , 
+          feature or website Look through some of my work and experience! 
+          If you like what you see and have a project you need coded, don’t hestiate to contact me.
+        </p>
+  
+        <div class="socials">
+          <h3>let's connect</h3>
+          <ul class="links">
+            <li>
+              <a href="">
+                <img src="images/twitter.svg" alt="">
+              </a>
+            </li>
+  
+            <li>
+              <a href="">
+                <img src="images/Linkedin icon.svg" alt="">
+              </a>
+            </li>
+  
+            <li>
+              <a href="">
+                <img src="images/m.svg" alt="">
+            </li>
+  
+            <li>
+              <a href="">
+                <img src="images/github.svg" alt="">
+              </a>
+            </li>
+  
+            <li>
+              <a href="">
+                <img src="images/peace.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+        <button class="btn">get my resume</button>
+  
+      </div>
+      
+  
+      <ul class="ability">
         <li>
-          <a href="">
-            <img src="images/twitter.svg" alt="">
-          </a>
+          <div class="flex">
+            <h3>languages</h3> 
+            <img src="images/Union1.png" alt="">
+          </div>
+          <ul class="dropdown">
+            <li>
+              <img src="images/Ellipse 1.png" alt="">
+              <p>javascript</p>
+            </li>
+            <li>
+              <img src="images/Ellipse 1 (1).png" alt="">
+              <p>html</p>
+            </li>
+            <li>
+              <img src="images/Ellipse 1 (2).png" alt="">
+              <p>css</p>
+            </li>
+          </ul>
         </li>
         <li>
-          <a href="">
-            <img src="images/Linkedin icon.svg" alt="">
-          </a>
+          <div class="flex">
+            <h3>framework</h3>
+            <img src="images/Union.png" alt="">
+          </div>
         </li>
         <li>
-          <a href="">
-            <img src="images/m.svg" alt="">
-        </li>
-        <li>
-          <a href="">
-            <img src="images/github.svg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="images/peace.svg" alt="">
-          </a>
+          <div class="flex">
+            <h3>skills</h3>
+            <img src="images/Union.png" alt="">
+          </div>
         </li>
       </ul>
-    </div>
-
-    <button class="btn">get my resume</button>
-
-    <ul class="ability">
-      <li>
-        <div class="flex">
-          <h3>languages</h3> 
-          <img src="images/Union1.png" alt="">
-        </div>
-        <ul class="dropdown">
-          <li>
-            <img src="images/Ellipse 1.png" alt="">
-            <p>javascript</p>
-          </li>
-          <li>
-            <img src="images/Ellipse 1 (1).png" alt="">
-            <p>html</p>
-          </li>
-          <li>
-            <img src="images/Ellipse 1 (2).png" alt="">
-            <p>css</p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <div class="flex">
-          <h3>framework</h3>
-          <img src="images/Union.png" alt="">
-        </div>
-      </li>
-      <li>
-        <div class="flex">
-          <h3>skills</h3>
-          <img src="images/Union.png" alt="">
-        </div>
-      </li>
-    </ul>
-
-  </section>
-  <section class="contact">
-    <h2>contact me</h2>
-    <p>
-      If you have an application you are interested in developing, 
-      a feature that you need built or a project that needs coding. I’d love to help with it 
-    </p>
-    <form action="https://formspree.io/f/mzbwnraj" method="post">
-      <input required type="text" name="user-name" maxlength="30" placeholder="enter your name">
-      <input required type="email" name="user-email" placeholder="enter your email">
-      <textarea required name="user-message" id=""  maxlength="500" placeholder="write your message here"></textarea>
-      <button type="submit" class="btn" >get in touch</button>
-    </form>
+  
+    </main>
+  
+    <main id="contact">
+      <h2>contact me</h2>
+      <p>
+        If you have an application you are interested in developing, 
+        a feature that you need built or a project that needs coding. I’d love to help with it 
+      </p>
+      <form action="https://formspree.io/f/mzbwnraj" method="post">
+        <input required type="text" name="user-name" maxlength="30" placeholder="enter your name">
+        <input required type="email" name="user-email" placeholder="enter your email">
+        <textarea required name="user-message" id=""  maxlength="500" placeholder="write your message here"></textarea>
+        <button type="submit" class="btn" >get in touch</button>
+      </form>
+    </main>
   </section>
 </body>
 </html>
+
