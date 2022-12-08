@@ -222,12 +222,11 @@ nav li a {
 
 .general {
   background-color: white;
+  border-top-right-radius: 5rem;
 }
 
 #about {
-  background-color: white;
-  border-top-right-radius: 5rem;
-  padding: 103px 3rem;
+  padding: 5rem 1rem;
 }
 
 #about h1 {
@@ -288,7 +287,6 @@ nav li a {
   flex-direction: column;
   border-top-left-radius: 7rem;
   padding: 1rem;
-  padding-top: 103px;
 }
 
 #contact h2 {
@@ -297,6 +295,7 @@ nav li a {
   margin-bottom: 1.2rem;
   text-align: center;
   text-transform: capitalize;
+  padding-top: 5rem;
 }
 
 #contact p {
@@ -307,6 +306,7 @@ nav li a {
 
 #contact form {
   margin: 1.2rem 0;
+  text-align: center;
 }
 
 #contact input,
@@ -335,6 +335,7 @@ nav li a {
   font-family: 'Poppins', sans-serif;
   border: none;
   border-radius: 7px;
+  text-align: center;
 }
 
 @media (min-width: 786px) {
@@ -434,8 +435,21 @@ nav li a {
     width: 54%;
   }
 
+  #contact h2,
+  #contact p,
+  #contact form {
+    width: 60%;
+    margin: 1rem auto;
+  }
+
   #about .main p {
     font-size: 16px;
     margin-right: 1rem;
+  }
+
+  /********** contact **********/
+
+  #contact {
+    background-image: url(images/contact\ form\ background\ shapes.svg);
   }
 }
