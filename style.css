@@ -220,12 +220,14 @@ nav li a {
 
 /************** the about style *******************/
 
+.general {
+  background-color: white;
+}
+
 #about {
   background-color: white;
   border-top-right-radius: 5rem;
-  padding: 2rem;
-  margin-bottom: 4rem;
-  padding-top: 103px;
+  padding: 103px 3rem;
 }
 
 #about h1 {
@@ -254,7 +256,7 @@ nav li a {
 .ability li {
   list-style: none;
   border-bottom: 1px solid #dfe1e6;
-  padding: 1.2rem;
+  padding: 1.2rem 0;
 }
 
 .flex {
@@ -321,6 +323,7 @@ nav li a {
 
 #contact textarea {
   height: 150px;
+  resize: none;
 }
 
 #contact button {
@@ -413,5 +416,26 @@ nav li a {
 
   .mobile {
     display: none;
+  }
+
+  /*********** about ******************/
+
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #about .main {
+    width: 45%;
+  }
+
+  .ability {
+    width: 54%;
+  }
+
+  #about .main p {
+    font-size: 16px;
+    margin-right: 1rem;
   }
 }
