@@ -25,6 +25,11 @@ nav {
   top: 0;
   background-color: white;
   height: 3rem;
+  z-index: 99;
+}
+
+.logo {
+  animation: rotate 1s  0.5s 1;
 }
 
 nav ul {
@@ -119,6 +124,7 @@ nav li a {
 
 .project img {
   width: 100%;
+  transition: 0.3s linear;
 }
 
 .top {
@@ -212,6 +218,10 @@ nav li a {
   color: white;
 }
 
+.image img:hover {
+  transform: scale(1.08);
+}
+
 .desktop {
   display: none;
 }
@@ -302,6 +312,7 @@ nav li a {
   font-size: 20px;
   margin-bottom: 1.2rem;
   text-align: center;
+  transition: 0.3s linear;
 }
 
 #contact form {
@@ -336,6 +347,16 @@ nav li a {
   text-align: center;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 786px) {
   nav {
     padding: 25px 155px;
@@ -352,8 +373,8 @@ nav li a {
   .header {
     background-image: url(images/Header\ bg.svg);
     background-repeat: no-repeat;
+    background-size: 100%;
     padding: 0 260px;
-    background-size: cover;
     background-position: center;
   }
 
@@ -370,7 +391,7 @@ nav li a {
 
   #projects {
     padding: 142px;
-    width: 100%;
+    width: 80%;
   }
 
   .project {
@@ -423,20 +444,21 @@ nav li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10rem;
   }
 
   #about .main {
-    width: 45%;
+    width: 48%;
   }
 
   .ability {
-    width: 54%;
+    width: 50%;
   }
 
   #contact h2,
   #contact p,
   #contact form {
-    width: 60%;
+    width: 40%;
     margin: 1rem auto;
   }
 
@@ -448,6 +470,7 @@ nav li a {
   /********** contact **********/
 
   #contact {
+    background-size: 100%;
     background-image: url(images/contact\ form\ background\ shapes.svg);
   }
 }
