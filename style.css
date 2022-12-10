@@ -194,6 +194,7 @@ nav li a {
   border: 1px solid #396df2;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
+  transition: 0.3s linear;
 }
 
 .btn:enabled {
@@ -345,6 +346,10 @@ nav li a {
   border: none;
   border-radius: 7px;
   text-align: center;
+}
+
+#contact p:hover {
+  transform: translateX(10px);
 }
 
 @keyframes rotate {
