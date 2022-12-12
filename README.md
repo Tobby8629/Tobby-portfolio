@@ -91,7 +91,7 @@ The portfolio project contains informations about me, my projects and my profess
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-it has not been deployed yet
+https://tobby8629.github.io/Tobby-portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
