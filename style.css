@@ -59,12 +59,13 @@ nav li a {
 .header {
   background-image: url(images/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
+  background-size: 100%;
   background-color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 5rem 2rem;
+  padding: 5rem 0;
   margin-top: 3rem;
   border-bottom-left-radius: 80px;
 }
