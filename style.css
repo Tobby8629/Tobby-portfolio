@@ -11,7 +11,17 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-body a:focus{
+nav li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  color: #344563;
+}
+
+body a:focus {
   color: #2230d2;
   outline-color: #396df2;
 }
@@ -52,16 +62,6 @@ nav li {
   margin-right: 10px;
 }
 
-nav li a {
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 5px;
-  font-family: 'Poppins', sans-serif;
-  text-transform: capitalize;
-  color: #344563;
-}
-
 .header {
   background-image: url(images/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@ nav li a {
   margin: 5px 0;
 }
 
-  .socials h3 {
+.socials h3 {
   color: #7f8cff;
   font-size: 16px;
   text-transform: uppercase;
@@ -324,8 +324,8 @@ nav li a {
   background-color: #6070ff;
   background-image: url(images/contact\ form\ shapes-mobile@2x.png);
   background-position: right;
-  background-position-y:top;
-  background-size:50%;
+  background-position-y: top;
+  background-size: 50%;
   background-repeat: no-repeat;
   height: 100%;
   color: white;
