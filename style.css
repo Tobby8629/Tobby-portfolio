@@ -11,14 +11,14 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-nav li a {
+.menu li a {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 5px;
   font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
-  color: #344563;
+  color: white;
 }
 
 body a:focus {
@@ -52,6 +52,7 @@ nav {
   animation: rotate 1s  1s 1;
   transform-origin: left;
 }
+
 .menu {
   background-color: #6070ffd4;
   backdrop-filter: blur(5px);
@@ -59,14 +60,14 @@ nav {
   top: 0;
   height: 100vh;
   position: fixed;
-  width: 100%; 
+  width: 100%;
   padding: 1rem;
   display: block;
   transition: 0.5s all;
 }
 
 .menu img {
-  width:20px;
+  width: 20px;
   position: absolute;
   right: 12%;
 }
@@ -78,21 +79,11 @@ nav {
 
 .menu li {
   list-style: none;
-  margin: 1rem 0px
+  margin: 1rem 0;
 }
 
-.absolute{
+.absolute {
   left: 0;
-}
-
-
-nav ul {
-  display: none;
-}
-
-nav li {
-  list-style: none;
-  margin-right: 10px;
 }
 
 .header {
@@ -171,7 +162,7 @@ nav li {
 
 .project {
   border-radius: 10px;
-  padding: 2rem;
+  padding: 1rem;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -239,11 +230,12 @@ nav li {
 
 .stack li {
   color: #6070ff;
-  font-size: 12px;
+  font-size: 15px;
   background-color: #ebebff;
   list-style: none;
   padding: 5px 8px;
   border-radius: 5px;
+  text-transform: capitalize;
 }
 
 .btn {
@@ -386,7 +378,6 @@ nav li {
 
 #contact form {
   margin: 1.2rem 0;
-  text-align: center;
 }
 
 #contact input,
@@ -439,8 +430,36 @@ nav li {
     padding: 25px 155px;
   }
 
-  nav ul {
+  .menu {
+    position: unset;
+    background-color: transparent;
+    backdrop-filter: unset;
+    height: unset;
+    width: auto;
+    padding: 0;
+  }
+
+  .menu ul {
     display: flex;
+    padding-top: 0;
+  }
+
+  .menu img {
+    display: none;
+  }
+
+  .menu li {
+    list-style: none;
+    margin-right: 10px;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #172b4d;
+    font-weight: 500;
+    padding: 5px;
+    text-transform: capitalize;
+    font-size: 15px;
   }
 
   .menu-bar {
@@ -538,8 +557,9 @@ nav li {
   #contact h2,
   #contact p,
   #contact form {
-    width: 50%;
+    width: 40%;
     margin: 1rem auto;
+    text-align: center;
   }
 
   #about .main p {
