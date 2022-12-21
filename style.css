@@ -52,6 +52,39 @@ nav {
   animation: rotate 1s  1s 1;
   transform-origin: left;
 }
+.menu {
+  background-color: #6070ffd4;
+  backdrop-filter: blur(5px);
+  left: -100%;
+  top: 0;
+  height: 100vh;
+  position: fixed;
+  width: 100%; 
+  padding: 1rem;
+  display: block;
+  transition: 0.5s all;
+}
+
+.menu img {
+  width:20px;
+  position: absolute;
+  right: 12%;
+}
+
+.menu ul {
+  display: block;
+  padding-top: 3rem;
+}
+
+.menu li {
+  list-style: none;
+  margin: 1rem 0px
+}
+
+.absolute{
+  left: 0;
+}
+
 
 nav ul {
   display: none;
