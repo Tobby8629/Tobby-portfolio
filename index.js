@@ -45,6 +45,24 @@ const array = [
 const extra = document.querySelector("#extra")
 const project = document.querySelectorAll('#expand');
 
+project.forEach((pro,index)=>{
+  pro.addEventListener('click',() => {
+      const v = index;
+      for (let i = 0; i < array.length; i++) {   
+          if( i === v){
+              display(array,i);
+              const view = document.querySelector('.popup');
+              view.classList.add('show');
+              
+              const canc = view.querySelector ('#cancel-port');
+              canc.addEventListener('click',() => {
+                extra.removeChild(view);
+              });
+          }   
+      }  
+  })  
+})
+
 
 function display (main,i) {
   let play =  
