@@ -431,13 +431,19 @@ nav {
   background-color: #c1c7d069;
   backdrop-filter: blur(5px);
   padding: 1rem;
+  height: 100vh;
   position: fixed;
   width: 100%;
-  height: 100vh;
+  display:flex;
+  align-items: center;
   top: 0;
   right: -100%;
   z-index: 99;
   transition: 0.5s all;
+}
+
+.popup .content .top h2 {
+  font-size: 28px;
 }
 
 .show {
@@ -446,7 +452,7 @@ nav {
 
 .popup .content {
   background-color: white;
-  padding: 1rem;
+  padding: 0.8rem;
   position: relative;
   border-radius: 10px;
 }
@@ -512,7 +518,7 @@ nav {
   }
 
   .button a {
-    padding: 3px 5px;
+    padding: 3px 4px;
     font-size: 12px;
     margin: 5px;
     width: 100%;
@@ -571,8 +577,13 @@ nav {
     width: 49%;
   }
 
+  .image {
+    height: 270px;
+  }
+
   .image img {
     width: 100%;
+    height: 100%;
   }
 
   .project .content {
@@ -598,6 +609,10 @@ nav {
     font-size: 13px;
   }
 
+  .top ul .desktop{
+    display: list-item;
+  }
+
   .desktop {
     display: block;
   }
@@ -621,12 +636,6 @@ nav {
 
   .ability {
     width: 50%;
-  }
-
-  .popup .content .top h2 {
-    margin: 0;
-    line-height: unset;
-    font-size: 30px;
   }
 
   .content .bottom p {
@@ -659,17 +668,16 @@ nav {
 
   .popup {
     position: fixed;
-    height: 100%;
-    padding: 0.5rem 0;
-  }
-
-  .popup .content .image {
-    height: 90%;
+    height: 100vh;
+    padding: 2rem;
   }
 
   .button img {
+    width: 12px;
     margin-left: 5px;
   }
+
+  
 
   .popup .content .image img {
     width: 100%;
@@ -680,12 +688,12 @@ nav {
   }
 
   .popup .content {
-    width: 50%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    height: 95vh;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 1rem;
   }
 
   .popup .content .top {
@@ -712,5 +720,13 @@ nav {
 
   .popup .stack li {
     font-size: 12px;
+  }
+}
+
+@media (min-width: 1026px){
+
+  .popup .content {
+    width: 60%;
+    height: 96vh;
   }
 }
