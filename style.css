@@ -372,6 +372,10 @@ nav {
   padding: 0.5rem 1rem;
 }
 
+.popup .content .top h2 {
+  font-size: 28px;
+}
+
 #contact h2 {
   font-weight: 700;
   font-size: 40px;
@@ -434,16 +438,12 @@ nav {
   height: 100vh;
   position: fixed;
   width: 100%;
-  display:flex;
+  display: flex;
   align-items: center;
   top: 0;
   right: -100%;
   z-index: 99;
   transition: 0.5s all;
-}
-
-.popup .content .top h2 {
-  font-size: 28px;
 }
 
 .show {
@@ -559,8 +559,8 @@ nav {
   }
 
   #projects {
-    padding: 3rem;
-    width: 80%;
+    padding: 2rem;
+    width: 95%;
   }
 
   .project {
@@ -577,8 +577,8 @@ nav {
     width: 49%;
   }
 
-  .image {
-    height: 270px;
+  .popup .image {
+    height: 280px;
   }
 
   .image img {
@@ -609,12 +609,12 @@ nav {
     font-size: 13px;
   }
 
-  .top ul .desktop{
-    display: list-item;
-  }
-
   .desktop {
     display: block;
+  }
+
+  .top ul .desktop {
+    display: list-item;
   }
 
   .mobile {
@@ -677,8 +677,6 @@ nav {
     margin-left: 5px;
   }
 
-  
-
   .popup .content .image img {
     width: 100%;
   }
@@ -723,7 +721,11 @@ nav {
   }
 }
 
-@media (min-width: 1026px){
+@media (min-width: 1026px) {
+  #projects {
+    padding: 3rem;
+    width: 80%;
+  }
 
   .popup .content {
     width: 60%;
