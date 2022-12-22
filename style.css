@@ -414,6 +414,62 @@ nav {
 #contact textarea:focus {
   outline-color: #396df2;
 }
+.popup {
+  background-color:  #c1c7d069;;
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: -100%;
+  z-index: 99;
+  transition: 0.5s all;
+}
+
+.show{
+  right:0;
+}
+
+.popup .content {
+  background-color: white;
+  padding: 1rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.popup .content .image {
+  width: 100%;
+}
+
+.popup .content .image img {
+  width: 100%;
+}
+
+.content #cancel-port {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.content .button {
+  display: flex;
+  padding: 0.5rem 0;
+  border-top: 1px solid #EBECF0;;
+} 
+
+.button button {
+  margin: 10px 1rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button img {
+  margin-left: 0.5rem;
+}
 
 @keyframes rotate {
   from {
