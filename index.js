@@ -239,3 +239,14 @@ email.addEventListener("keyup", () => {
 message.addEventListener("keyup", () => {
   localStorage.setItem('message', message.value);
 })
+
+window.addEventListener('load',()=>{
+  const one = window.localStorage.getItem('name');
+  const two = window.localStorage.getItem('email');
+  const three = window.localStorage.getItem('message');
+ 
+  user.value = one;
+  email.value = two;
+  message.value = three;
+ })
+ 
