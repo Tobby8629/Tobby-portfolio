@@ -224,4 +224,29 @@ form.addEventListener('submit',(e)=>{
       conditions.style.display = 'block'
     }   
   })
+});
+
+const user = document.querySelector('#username');
+
+user.addEventListener("keyup", () => {
+  localStorage.setItem('name', user.value);
 })
+
+email.addEventListener("keyup", () => {
+  localStorage.setItem('email', email.value);
+})
+
+message.addEventListener("keyup", () => {
+  localStorage.setItem('message', message.value);
+})
+
+window.addEventListener('load',()=>{
+  const one = window.localStorage.getItem('name');
+  const two = window.localStorage.getItem('email');
+  const three = window.localStorage.getItem('message');
+ 
+  user.value = one;
+  email.value = two;
+  message.value = three;
+ })
+ 
