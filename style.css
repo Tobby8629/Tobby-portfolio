@@ -374,6 +374,7 @@ nav {
 
 .popup .content .top h2 {
   font-size: 28px;
+  line-height: 20px;
 }
 
 #contact h2 {
@@ -452,6 +453,7 @@ nav {
 
 .popup .content {
   background-color: white;
+  height: 95vh;
   padding: 0.8rem;
   position: relative;
   border-radius: 10px;
@@ -518,7 +520,7 @@ nav {
   }
 
   .button a {
-    padding: 3px 4px;
+    padding: 5px;
     font-size: 12px;
     margin: 5px;
     width: 100%;
@@ -606,7 +608,7 @@ nav {
   }
 
   .stack li {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .desktop {
@@ -689,9 +691,8 @@ nav {
     width: 90%;
     display: flex;
     flex-direction: column;
-    height: 95vh;
+    height: 90vh;
     margin: 0 auto;
-    padding: 1rem;
   }
 
   .popup .content .top {
@@ -706,18 +707,24 @@ nav {
 
   .content .bottom ul {
     flex-wrap: wrap;
+    margin-bottom: 0;
+    border-radius: 8px;
+    padding-bottom: 10px;
   }
 
   .bottom .words {
-    width: 63%;
+    width: 65%;
   }
 
   .bottom .other {
-    width: 35%;
+    width: 33%;
   }
 
   .popup .stack li {
     font-size: 12px;
+    padding: 4px 12px;
+    margin-right: 3px;
+    margin-bottom: 5px;
   }
 }
 
@@ -727,8 +734,20 @@ nav {
     width: 80%;
   }
 
-  .popup .content {
-    width: 60%;
-    height: 96vh;
+  .popup .image {
+    height: 300px;
+  }
+
+  .content .bottom p {
+    font-size: 14px;
+  }
+
+  .popup .stack li {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .button a {
+    font-size: 14px;
   }
 }
