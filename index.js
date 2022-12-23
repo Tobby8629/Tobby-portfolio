@@ -219,7 +219,7 @@ form.addEventListener('submit',(e)=>{
   input.forEach((input) => {
     let value = email.value;
     let balance = checker(value);
-    if (balance || input.value === '' || message.value === '') {
+    if (balance || input.value === '' || message.value.length < 10) {
       e.preventDefault();
       conditions.style.display = 'block'
     }   
