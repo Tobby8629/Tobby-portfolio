@@ -11,6 +11,15 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.button a {
+  margin: 5px 0.5rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .menu li a {
   text-decoration: none;
   font-size: 1.5rem;
@@ -19,11 +28,6 @@ body {
   font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
   color: white;
-}
-
-body a:focus {
-  color: #2230d2;
-  outline-color: #396df2;
 }
 
 header {
@@ -162,7 +166,7 @@ nav {
 
 .project {
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -185,7 +189,7 @@ nav {
   flex-direction: column;
 }
 
-.project h2 {
+.content h2 {
   text-transform: capitalize;
   margin: 0.5rem 0;
   font-size: 32px;
@@ -194,12 +198,12 @@ nav {
   color: #172b4d;
 }
 
-.project ul {
+.content ul {
   display: flex;
   align-items: center;
 }
 
-.project li {
+.content li {
   margin-right: 1rem;
   margin-bottom: 10px;
   font-size: 13px;
@@ -209,13 +213,13 @@ nav {
   font-weight: 400;
 }
 
-.project p {
+.content p {
   margin-bottom: 1rem;
   font-size: 15px;
   font-weight: 400;
 }
 
-.project .dark {
+.content .dark {
   list-style: none;
   color: black;
   font-size: 13px;
@@ -278,8 +282,16 @@ nav {
   color: white;
 }
 
+.button img {
+  margin-left: 0.5rem;
+}
+
 .image img:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
+}
+
+.project:hover {
+  box-shadow: 1px 1px 2px 2px #396df2;
 }
 
 .desktop {
@@ -360,6 +372,11 @@ nav {
   padding: 0.5rem 1rem;
 }
 
+.popup .content .top h2 {
+  font-size: 28px;
+  line-height: 20px;
+}
+
 #contact h2 {
   font-weight: 700;
   font-size: 40px;
@@ -415,6 +432,54 @@ nav {
   outline-color: #396df2;
 }
 
+.popup {
+  background-color: #c1c7d069;
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: -100%;
+  z-index: 99;
+  transition: 0.5s all;
+}
+
+.show {
+  right: 0;
+}
+
+.popup .content {
+  background-color: white;
+  height: 95vh;
+  padding: 0.8rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.popup .content .image {
+  width: 100%;
+}
+
+.popup .content .image img {
+  width: 100%;
+}
+
+.content #cancel-port {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.content .button {
+  display: flex;
+  padding: 0.5rem 0;
+  border-top: 1px solid #ebecf0;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(-180deg);
@@ -430,6 +495,7 @@ nav {
     padding: 25px 155px;
   }
 
+  /********* menu pop-up ********/
   .menu {
     position: unset;
     background-color: transparent;
@@ -453,6 +519,13 @@ nav {
     margin-right: 10px;
   }
 
+  .button a {
+    padding: 5px;
+    font-size: 12px;
+    margin: 5px;
+    width: 100%;
+  }
+
   .menu li a {
     text-decoration: none;
     color: #172b4d;
@@ -465,6 +538,8 @@ nav {
   .menu-bar {
     display: none;
   }
+
+  /********* header section ********/
 
   .header {
     background-image: url(images/Header\ bg.svg);
@@ -486,12 +561,14 @@ nav {
   }
 
   #projects {
-    padding: 3rem;
+    padding: 2rem;
+    width: 95%;
   }
 
   .project {
     flex-direction: row;
     justify-content: space-between;
+    padding: 1rem;
   }
 
   .inverse {
@@ -502,8 +579,13 @@ nav {
     width: 49%;
   }
 
+  .popup .image {
+    height: 280px;
+  }
+
   .image img {
     width: 100%;
+    height: 100%;
   }
 
   .project .content {
@@ -526,11 +608,15 @@ nav {
   }
 
   .stack li {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .desktop {
     display: block;
+  }
+
+  .top ul .desktop {
+    display: list-item;
   }
 
   .mobile {
@@ -554,6 +640,10 @@ nav {
     width: 50%;
   }
 
+  .content .bottom p {
+    font-size: 12px;
+  }
+
   #contact h2,
   #contact p,
   #contact form {
@@ -572,5 +662,92 @@ nav {
   #contact {
     background-size: 100%;
     background-image: url(images/contact\ form\ background\ shapes.svg);
+  }
+
+  /********** contact **********/
+
+  /*************** desktop popup ************/
+
+  .popup {
+    position: fixed;
+    height: 100vh;
+    padding: 2rem;
+  }
+
+  .button img {
+    width: 12px;
+    margin-left: 5px;
+  }
+
+  .popup .content .image img {
+    width: 100%;
+  }
+
+  .popup .image img:hover {
+    transform: none;
+  }
+
+  .popup .content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    margin: 0 auto;
+  }
+
+  .popup .content .top {
+    margin: 5px 0;
+  }
+
+  .content .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .content .bottom ul {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    border-radius: 8px;
+    padding-bottom: 10px;
+  }
+
+  .bottom .words {
+    width: 65%;
+  }
+
+  .bottom .other {
+    width: 33%;
+  }
+
+  .popup .stack li {
+    font-size: 12px;
+    padding: 4px 12px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 1026px) {
+  #projects {
+    padding: 3rem;
+    width: 80%;
+  }
+
+  .popup .image {
+    height: 300px;
+  }
+
+  .content .bottom p {
+    font-size: 14px;
+  }
+
+  .popup .stack li {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .button a {
+    font-size: 14px;
   }
 }
