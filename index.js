@@ -224,4 +224,18 @@ form.addEventListener('submit',(e)=>{
       conditions.style.display = 'block'
     }   
   })
+});
+
+const user = document.querySelector('#username');
+
+user.addEventListener("keyup", () => {
+  localStorage.setItem('name', user.value);
+})
+
+email.addEventListener("keyup", () => {
+  localStorage.setItem('email', email.value);
+})
+
+message.addEventListener("keyup", () => {
+  localStorage.setItem('message', message.value);
 })
