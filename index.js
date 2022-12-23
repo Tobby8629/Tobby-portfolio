@@ -204,3 +204,24 @@ project.forEach((pro, index) => {
     }
   });
 });
+
+const input = document.querySelectorAll('#port-form input')
+const form = document.querySelector('#port-form');
+const email = document.querySelector('#email');
+const message = document.querySelector('#message');
+const conditions = document.querySelector('.conditions');
+
+function checker(val) {
+  return /[A-Z]/.test(val)
+}
+
+form.addEventListener('submit',(e)=>{
+  input.forEach((input) => {
+    let value = email.value;
+    let balance = checker(value);
+    if (balance || input.value === '' || message.value.length < 10) {
+      e.preventDefault();
+      conditions.style.display = 'block'
+    }   
+  })
+})

@@ -334,6 +334,11 @@ nav {
   font-size: 16px;
 }
 
+.conditions li {
+  list-style-position: inside;
+  margin-left: 2px;
+}
+
 .ability li {
   list-style: none;
   border-bottom: 1px solid #dfe1e6;
@@ -480,6 +485,12 @@ nav {
   border-top: 1px solid #ebecf0;
 }
 
+.conditions {
+  display: none;
+  text-align: left;
+  font-size: 14px;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(-180deg);
@@ -580,7 +591,7 @@ nav {
   }
 
   .popup .image {
-    height: 280px;
+    height: 250px;
   }
 
   .image img {
@@ -735,7 +746,7 @@ nav {
   }
 
   .popup .image {
-    height: 300px;
+    height: 280px;
   }
 
   .content .bottom p {

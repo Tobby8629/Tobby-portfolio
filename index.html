@@ -337,10 +337,16 @@
         If you have an application you are interested in developing, 
         a feature that you need built or a project that needs coding. I’d love to help with it 
       </p>
-      <form action="https://formspree.io/f/mzbwnraj" method="post">
-        <input required type="text" name="user-name" maxlength="30" placeholder="enter your name">
-        <input required type="email" name="user-email" placeholder="enter your email">
-        <textarea required name="user-message" id=""  maxlength="500" placeholder="write your message here"></textarea>
+      <form action="https://formspree.io/f/mzbwnraj" method="post" id="port-form">
+        <input type="text" name="user-name" maxlength="30" placeholder="enter your name" id="username">
+        <input type="email" name="user-email" placeholder="enter your email" id="email">
+        <textarea name="user-message" id="message"  maxlength="500" placeholder="write your message here"></textarea>
+        <ul class="conditions">
+          <li>Email input should be in lowerCase</li>
+          <li>fill all input</li>
+          <li>message input must not be less than 10</li>
+          <li>All input field should be filled approiately</li>
+        </ul>
         <button type="submit" class="btn" >get in touch</button>
       </form>
     </main>
