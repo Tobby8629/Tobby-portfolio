@@ -49,7 +49,7 @@ const array = [
 
     mobileImage: 'images/Snapshoot Portfolio (1).png',
 
-    desktopImage: 'images/desktop-port/p2.png',
+    desktopImage: 'images/desktop-port/second.png',
 
     desktopdesc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
@@ -75,7 +75,7 @@ const array = [
 
     mobileImage: 'images/Snapshoot Portfolio (2).png',
 
-    desktopImage: 'images/desktop-port/p3.png',
+    desktopImage: 'images/desktop-port/third.png',
 
     desktopdesc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
@@ -101,7 +101,7 @@ const array = [
 
     mobileImage: 'images/Snapshoot Portfolio (3).png',
 
-    desktopImage: 'images/desktop-port/p4.png',
+    desktopImage: 'images/desktop-port/fourth.png',
 
     desktopdesc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
