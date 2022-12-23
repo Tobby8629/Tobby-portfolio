@@ -480,6 +480,17 @@ nav {
   border-top: 1px solid #ebecf0;
 }
 
+.conditions {
+  display: none;
+  text-align: left;
+  font-size: 14px;
+}
+
+.conditions li {
+ list-style-position: inside;
+ margin-left: 2px;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(-180deg);
